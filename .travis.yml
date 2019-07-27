@@ -4,10 +4,23 @@ node_js:
 cache:
   yarn: true
 script:
-- docker-compose up -
-- while ! $(curl --silent --fail --output /dev/null http://localhost:8080/); do sleep 1; done
-- ./fixture/purge.sh
-- ./fixture/import.sh
+- docker-compose up -d
+- while ! $(curl --silent --fail --output /dev/null http://localhost:8080/); do sleep
+  1; done
+- "./fixture/purge.sh"
+- "./fixture/import.sh"
 - yarn install
-- yarn gatsby build
+- yarn gatsby build --prefix-paths
 - touch public/.nojekyll
+deploy:
+  provider: pages
+  github_token: "$GITHUB_TOKEN"
+  local-dir: "./public"
+  keep-history: false
+  skip-cleanup: true
+  target-branch: gh-pages
+  on:
+    branch: master
+env:
+  global:
+    secure: hdyKy3gikSLjx3quVTGkKdTN3hSHQhtl/ZoixtixAU3kh4aOM0XwtktOX05Yp+99lNBY/+vxyxT8GrRGrJMAT5Q8O11OepNYgRw/37S93AYCFRAMFmB03o3/s9Clt/y1IMBbdWN5VpXyZP9nVFT4gMvWFXXArPcivTjw/Q4vPmwiSQZHaxpj/fAAguTbr1RHs8UD1pojWh/L4q3/HokNFeoDL+hUdYC+M6Uh+mOvQp7pJGvhedQgZmsnyfP1MHGcqtKI+452flSYrwowdP83cvLAO0N/Qa9wPIMtDv8+sBCyE/C3SUKJvVu9hbPfj5Q/3/s7gXFpFiFzZplQQhKRQztVLD6S8rAZ7lNzgUGoaTCQnYcqBGa901Tgx5nOfwQkGmeBPUy6OpUKsC5M0oMCpAbzE/tPRxczVijgeVNiPY5UQ3vzHCtkWbK20SBJ09lhjkocNQZv7NP0TAHg2zqJ0wJ2X5aVQphpArZcubSnjpJElTt76mSlSkRXHxKeKrL/m6neLQE0DvY3D5FOsfUQ42SKUlDSjZS2Ch7AzDzmCNyQqku3vdOid51FcO3NGUCE8L39iMnIqE17fs58Bkeslf5F2i6RHTJ6UEO7UnaRjHLCTJlWLitRGYvDlA1SE/6CdRYszznj8VQnh8S6Quqv8YNPk09cEAZBVKxbFZXvo58=

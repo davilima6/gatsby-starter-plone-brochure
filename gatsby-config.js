@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: 'Plone plugin for Gatsby',
   },
-  pathPrefix: '/gatsby-source-plone',
+  pathPrefix: '/gatsby-starter-plone-brochure',
   plugins: [
     {
       resolve: 'gatsby-source-plone',
