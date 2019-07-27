@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- 10.1.0
+cache:
+  yarn: true
+script:
+- docker-compose up
+- ./fixture/purge.sh
+- ./fixture/import.sh
+- yarn install
+- yarn gatsby build
+- touch public/.nojekyll
