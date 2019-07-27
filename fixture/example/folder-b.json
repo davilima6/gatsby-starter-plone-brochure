@@ -1,0 +1,75 @@
+{
+  "@components": {
+    "actions": {
+      "@id": "http://localhost:8080/Plone/example/folder-b/@actions"
+    },
+    "breadcrumbs": {
+      "@id": "http://localhost:8080/Plone/example/folder-b/@breadcrumbs"
+    },
+    "navigation": {
+      "@id": "http://localhost:8080/Plone/example/folder-b/@navigation"
+    },
+    "workflow": {
+      "@id": "http://localhost:8080/Plone/example/folder-b/@workflow"
+    }
+  },
+  "@id": "http://localhost:8080/Plone/example/folder-b",
+  "@type": "Folder",
+  "UID": "7e51afe28b084c16864d5f94df4c4e13",
+  "allow_discussion": false,
+  "contributors": [],
+  "created": "2019-07-27T20:47:42+00:00",
+  "creators": [
+    "admin"
+  ],
+  "description": "Rendered with flexbos",
+  "effective": "2019-07-25T08:22:00",
+  "exclude_from_nav": false,
+  "expires": null,
+  "id": "folder-b",
+  "is_folderish": true,
+  "items": [
+    {
+      "@id": "http://localhost:8080/Plone/example/folder-b/cute",
+      "@type": "Document",
+      "description": "",
+      "review_state": "published",
+      "title": "Lorem"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/example/folder-b/ipsum",
+      "@type": "Document",
+      "description": "",
+      "review_state": "published",
+      "title": "Ipsum"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/example/folder-b/dolor",
+      "@type": "Document",
+      "description": "",
+      "review_state": "published",
+      "title": "Dolor"
+    }
+  ],
+  "items_total": 3,
+  "language": {
+    "title": "English",
+    "token": "en"
+  },
+  "layout": "listing_view",
+  "modified": "2019-07-27T20:47:44+00:00",
+  "nextPreviousEnabled": false,
+  "parent": {
+    "@id": "http://localhost:8080/Plone/example",
+    "@type": "Folder",
+    "description": "",
+    "review_state": "published",
+    "title": "Example"
+  },
+  "relatedItems": [],
+  "review_state": "published",
+  "rights": null,
+  "subjects": [],
+  "title": "Folder of cards",
+  "version": "current"
+}

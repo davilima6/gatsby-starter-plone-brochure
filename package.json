@@ -1,0 +1,55 @@
+{
+  "name": "gatsby-starter-plone-brochure",
+  "private": true,
+  "description": "datakurre.pandala.org",
+  "version": "0.1.0",
+  "author": "Asko Soukka <asko.soukka@iki.fi>",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "axios-retry": "^3.1.2",
+    "bootstrap": "^4.3.1",
+    "gatsby": "^2.13.39",
+    "gatsby-image": "^2.2.6",
+    "gatsby-plugin-offline": "^2.2.4",
+    "gatsby-plugin-react-helmet": "^3.1.2",
+    "gatsby-plugin-sass": "^2.1.3",
+    "gatsby-plugin-sharp": "^2.2.9",
+    "gatsby-plugin-typography": "^2.3.2",
+    "gatsby-source-filesystem": "^2.1.6",
+    "gatsby-source-plone": "https://github.com/collective/gatsby-source-plone#78bcc8720f922dbb2f1274c7eaad9bc2b3c9e505",
+    "gatsby-transformer-sharp": "^2.2.4",
+    "node-sass": "^4.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-serialize": "^0.2.0",
+    "react-typography": "^0.16.19",
+    "styled-components": "^4.3.2",
+    "typography": "^0.16.19",
+    "typography-theme-parnassus": "^0.16.19"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "homepage": "https://github.com/datakurre/gatsby-starter-plone-brochure",
+  "keywords": [
+    "gatsby",
+    "plone"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datakurre/gatsby-starter-plone-brochure.git"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write *.js src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  }
+}

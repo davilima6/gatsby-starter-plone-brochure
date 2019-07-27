@@ -1,0 +1,95 @@
+{
+  "@components": {
+    "actions": {
+      "@id": "http://localhost:8080/Plone/example/climate-change-cold-glacier-2229887.jpg/@actions"
+    },
+    "breadcrumbs": {
+      "@id": "http://localhost:8080/Plone/example/climate-change-cold-glacier-2229887.jpg/@breadcrumbs"
+    },
+    "navigation": {
+      "@id": "http://localhost:8080/Plone/example/climate-change-cold-glacier-2229887.jpg/@navigation"
+    },
+    "workflow": {
+      "@id": "http://localhost:8080/Plone/example/climate-change-cold-glacier-2229887.jpg/@workflow"
+    }
+  },
+  "@id": "http://localhost:8080/Plone/example/climate-change-cold-glacier-2229887.jpg",
+  "@type": "Image",
+  "UID": "c6cc5b34ea92434d8bbf01129c2eea85",
+  "allow_discussion": false,
+  "contributors": [],
+  "created": "2019-07-27T20:47:45+00:00",
+  "creators": [
+    "admin"
+  ],
+  "description": "",
+  "effective": null,
+  "exclude_from_nav": false,
+  "expires": null,
+  "id": "climate-change-cold-glacier-2229887.jpg",
+  "image": {
+    "content-type": "image/jpeg",
+    "download": "http://localhost:8080/Plone/example/climate-change-cold-glacier-2229887.jpg/@@images/de78c301-dcef-4512-a65a-3ef8f9384169.jpeg",
+    "filename": "climate-change-cold-glacier-2229887.jpg",
+    "height": 3888,
+    "scales": {
+      "icon": {
+        "download": "http://localhost:8080/Plone/example/climate-change-cold-glacier-2229887.jpg/@@images/68e02af7-8a8d-4c03-91bf-0a94fe81f75b.jpeg",
+        "height": 24,
+        "width": 32
+      },
+      "large": {
+        "download": "http://localhost:8080/Plone/example/climate-change-cold-glacier-2229887.jpg/@@images/ef7c9982-e8db-45a3-80ca-9b2d9b91cfc4.jpeg",
+        "height": 576,
+        "width": 768
+      },
+      "listing": {
+        "download": "http://localhost:8080/Plone/example/climate-change-cold-glacier-2229887.jpg/@@images/63ccb13c-facc-47b7-b3a5-08478aa23066.jpeg",
+        "height": 12,
+        "width": 16
+      },
+      "mini": {
+        "download": "http://localhost:8080/Plone/example/climate-change-cold-glacier-2229887.jpg/@@images/4051cdae-40ab-4d98-928b-86d2adfa0788.jpeg",
+        "height": 150,
+        "width": 200
+      },
+      "preview": {
+        "download": "http://localhost:8080/Plone/example/climate-change-cold-glacier-2229887.jpg/@@images/f36b3604-60a9-4b2c-8ca9-7bb0bf620470.jpeg",
+        "height": 300,
+        "width": 400
+      },
+      "thumb": {
+        "download": "http://localhost:8080/Plone/example/climate-change-cold-glacier-2229887.jpg/@@images/79640d96-46d7-45b1-9751-9c8837dae43f.jpeg",
+        "height": 96,
+        "width": 128
+      },
+      "tile": {
+        "download": "http://localhost:8080/Plone/example/climate-change-cold-glacier-2229887.jpg/@@images/6d9d40a4-5401-423b-bbb8-5f0b547f6d33.jpeg",
+        "height": 48,
+        "width": 64
+      }
+    },
+    "size": 4250698,
+    "width": 5184
+  },
+  "is_folderish": false,
+  "language": {
+    "title": "English",
+    "token": "en"
+  },
+  "layout": "image_view",
+  "modified": "2019-07-27T20:47:46+00:00",
+  "parent": {
+    "@id": "http://localhost:8080/Plone/example",
+    "@type": "Folder",
+    "description": "",
+    "review_state": "published",
+    "title": "Example"
+  },
+  "relatedItems": [],
+  "review_state": null,
+  "rights": null,
+  "subjects": [],
+  "title": "Lorem ipsum",
+  "version": "current"
+}

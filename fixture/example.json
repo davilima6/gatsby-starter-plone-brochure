@@ -1,0 +1,102 @@
+{
+  "@components": {
+    "actions": {
+      "@id": "http://localhost:8080/Plone/example/@actions"
+    },
+    "breadcrumbs": {
+      "@id": "http://localhost:8080/Plone/example/@breadcrumbs"
+    },
+    "navigation": {
+      "@id": "http://localhost:8080/Plone/example/@navigation"
+    },
+    "workflow": {
+      "@id": "http://localhost:8080/Plone/example/@workflow"
+    }
+  },
+  "@id": "http://localhost:8080/Plone/example",
+  "@type": "Folder",
+  "UID": "e5da4881898b441794351e5d20d43165",
+  "allow_discussion": false,
+  "contributors": [],
+  "created": "2019-07-27T20:47:36+00:00",
+  "creators": [
+    "admin"
+  ],
+  "description": "",
+  "effective": "2019-07-27T13:02:00",
+  "exclude_from_nav": false,
+  "expires": null,
+  "id": "example",
+  "is_folderish": true,
+  "items": [
+    {
+      "@id": "http://localhost:8080/Plone/example/adventure-beautiful-blue-sky-666737.jpg",
+      "@type": "Image",
+      "description": "The Ultimate Open Source CMS",
+      "review_state": null,
+      "title": "Plone"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/example/lorem-ipsum",
+      "@type": "Document",
+      "description": "Lorem ipsum dolor sit amet",
+      "review_state": "published",
+      "title": "Lorem ipsum"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/example/folder-a",
+      "@type": "Folder",
+      "description": "Rendered with flexbos",
+      "review_state": "published",
+      "title": "Folder of cards"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg",
+      "@type": "Image",
+      "description": "",
+      "review_state": null,
+      "title": "Lorem ipsum dolor"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/example/folder-b",
+      "@type": "Folder",
+      "description": "Rendered with flexbos",
+      "review_state": "published",
+      "title": "Folder of cards"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/example/climate-change-cold-glacier-2229887.jpg",
+      "@type": "Image",
+      "description": "",
+      "review_state": null,
+      "title": "Lorem ipsum"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/example/folder-c",
+      "@type": "Folder",
+      "description": "Rendered with flexbos",
+      "review_state": "published",
+      "title": "Folder of cards"
+    }
+  ],
+  "items_total": 7,
+  "language": {
+    "title": "English",
+    "token": "en"
+  },
+  "layout": "listing_view",
+  "modified": "2019-07-27T20:48:05+00:00",
+  "nextPreviousEnabled": false,
+  "parent": {
+    "@id": "http://localhost:8080/Plone",
+    "@type": "Plone Site",
+    "description": "",
+    "title": "Plone site"
+  },
+  "relatedItems": [],
+  "review_state": "published",
+  "rights": null,
+  "subjects": [],
+  "title": "Example",
+  "version": "current"
+}

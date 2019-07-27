@@ -1,0 +1,19 @@
+// Theme colors and other variables can be used in styled components
+// by importing this file as CSS module
+@import "./variables";
+
+:export {
+  @each $color, $value in $theme-colors {
+    #{$color}: $value;
+  }
+
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    #{$infix}: map_get($grid-breakpoints, $infix);
+  }
+}
+
+.fullwidth {
+  min-width: 100%;
+  max-width: 100%;
+}

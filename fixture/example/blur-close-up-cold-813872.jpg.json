@@ -1,0 +1,95 @@
+{
+  "@components": {
+    "actions": {
+      "@id": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@actions"
+    },
+    "breadcrumbs": {
+      "@id": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@breadcrumbs"
+    },
+    "navigation": {
+      "@id": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@navigation"
+    },
+    "workflow": {
+      "@id": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@workflow"
+    }
+  },
+  "@id": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg",
+  "@type": "Image",
+  "UID": "e65a177c64164c24a9dcbd7d20ab6f80",
+  "allow_discussion": false,
+  "contributors": [],
+  "created": "2019-07-27T20:47:41+00:00",
+  "creators": [
+    "admin"
+  ],
+  "description": "",
+  "effective": null,
+  "exclude_from_nav": false,
+  "expires": null,
+  "id": "blur-close-up-cold-813872.jpg",
+  "image": {
+    "content-type": "image/jpeg",
+    "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/693b5213-4182-478e-a256-56f568caa079.jpeg",
+    "filename": "blur-close-up-cold-813872.jpg",
+    "height": 2112,
+    "scales": {
+      "icon": {
+        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/9f98142d-5d45-4f03-8a51-c44ea7b80d97.jpeg",
+        "height": 19,
+        "width": 32
+      },
+      "large": {
+        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/1c04ec40-bcfb-4ce2-84f7-d38ae846ca58.jpeg",
+        "height": 458,
+        "width": 768
+      },
+      "listing": {
+        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/2b71294d-1e2a-4326-b608-49d9a099423e.jpeg",
+        "height": 9,
+        "width": 16
+      },
+      "mini": {
+        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/9afe4878-e4ad-4d33-8a82-bbafe9446de6.jpeg",
+        "height": 119,
+        "width": 200
+      },
+      "preview": {
+        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/b8e2b743-783b-4482-b661-0133d288c9b0.jpeg",
+        "height": 238,
+        "width": 400
+      },
+      "thumb": {
+        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/c0b9ff79-1d00-482f-a639-dd1d7ae20aea.jpeg",
+        "height": 76,
+        "width": 128
+      },
+      "tile": {
+        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/e998affe-d115-4620-b39a-ea340aac1be5.jpeg",
+        "height": 38,
+        "width": 64
+      }
+    },
+    "size": 1176331,
+    "width": 3538
+  },
+  "is_folderish": false,
+  "language": {
+    "title": "English",
+    "token": "en"
+  },
+  "layout": "image_view",
+  "modified": "2019-07-27T20:47:41+00:00",
+  "parent": {
+    "@id": "http://localhost:8080/Plone/example",
+    "@type": "Folder",
+    "description": "",
+    "review_state": "published",
+    "title": "Example"
+  },
+  "relatedItems": [],
+  "review_state": null,
+  "rights": null,
+  "subjects": [],
+  "title": "Lorem ipsum dolor",
+  "version": "current"
+}
