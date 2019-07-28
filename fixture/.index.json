@@ -22,9 +22,16 @@
       "description": "",
       "review_state": "published",
       "title": "Example"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/images",
+      "@type": "Folder",
+      "description": "",
+      "review_state": "private",
+      "title": "Images"
     }
   ],
-  "items_total": 1,
+  "items_total": 2,
   "parent": {},
   "tiles": {},
   "tiles_layout": {},

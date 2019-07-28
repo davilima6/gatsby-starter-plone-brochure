@@ -1,0 +1,52 @@
+{
+  "@components": {
+    "actions": {
+      "@id": "http://localhost:8080/Plone/images/@actions"
+    },
+    "breadcrumbs": {
+      "@id": "http://localhost:8080/Plone/images/@breadcrumbs"
+    },
+    "navigation": {
+      "@id": "http://localhost:8080/Plone/images/@navigation"
+    },
+    "workflow": {
+      "@id": "http://localhost:8080/Plone/images/@workflow"
+    }
+  },
+  "@id": "http://localhost:8080/Plone/images",
+  "@type": "Folder",
+  "UID": "fd3fb5d89f214949ad7ec91dada10a30",
+  "allow_discussion": false,
+  "contributors": [],
+  "created": "2019-07-27T21:38:17+00:00",
+  "creators": [
+    "admin"
+  ],
+  "description": "",
+  "effective": null,
+  "exclude_from_nav": false,
+  "expires": null,
+  "id": "images",
+  "is_folderish": true,
+  "items": [],
+  "items_total": 0,
+  "language": {
+    "title": "English",
+    "token": "en"
+  },
+  "layout": "listing_view",
+  "modified": "2019-07-27T21:40:52+00:00",
+  "nextPreviousEnabled": false,
+  "parent": {
+    "@id": "http://localhost:8080/Plone",
+    "@type": "Plone Site",
+    "description": "",
+    "title": "Plone site"
+  },
+  "relatedItems": [],
+  "review_state": "private",
+  "rights": null,
+  "subjects": [],
+  "title": "Images",
+  "version": "current"
+}

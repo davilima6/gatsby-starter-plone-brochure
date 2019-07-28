@@ -9,7 +9,7 @@ import styles from '../styles/index.module.scss';
 
 const FixedContainer = styled.div`
   position: relative;
-  height: 400px;
+  height: 80vh;
   overflow: hidden;
   color: ${styles.white};
   &:nth-last-child(2) {
@@ -39,9 +39,15 @@ const FixedContainerText = styled.div`
   align-content: center;
 `;
 
-const Huge = styled.div`
+const HUGE = styled.div`
   font-family: ${headerFontFamily.join(', ')};
   ${scale(2)};
+`;
+
+const Huge = styled.div`
+  font-family: ${headerFontFamily.join(', ')};
+  ${scale(1.75)};
+  font-weight: bold;
 `;
 
 const Large = styled.div`
@@ -57,13 +63,13 @@ const Image = ({ node }) => {
     <FixedContainer className="mb-6">
       <Img
         className={styles.fullwidth}
-        imgStyle={{ height: 400 }}
-        fixed={node.image.childImageSharp.fixed}
+        imgStyle={{ height: '80vh' }}
+        fixed={node.image.childImageSharp.hero}
       />
       <FixedContainerBackdrop />
       <FixedContainerText>
         <div className="d-flex flex-column align-items-center text-center w-100">
-          <Huge>{node.title}</Huge>
+          <HUGE>{node.title}</HUGE>
           <Big>{node.description}</Big>
         </div>
       </FixedContainerText>
@@ -71,9 +77,6 @@ const Image = ({ node }) => {
   );
 };
 
-// Process images
-// If image node, use gatsby-image to display content from plugin-sharp
-// If external linked image, display the image normally
 const ResolveImage = images => data => {
   let byPath = images.reduce(
     (map, image) => map.set(image._path, image),
@@ -87,11 +90,19 @@ const ResolveImage = images => data => {
     );
     return (
       <Img
-        Tag="span"
         className={data.className}
+        style={
+          data.className !== 'image-inline'
+            ? {}
+            : {
+                display: 'block',
+                marginLeft: 'auto',
+                marginRight: 'auto',
+              }
+        }
         fixed={
           byPath.get(data.src).image.childImageSharp[
-            byResolution.get(data['data-download'])
+            byResolution.get(data['data-download']) || 'mini'
           ]
         }
       />
@@ -104,11 +115,8 @@ const ResolveImage = images => data => {
 // For inline-images, see: https://collective.github.io/gatsby-source-plone/tutorial/6_richtext_component/
 const Document = ({ node }) => {
   return (
-    <div className="d-flex flex-column text-center my-4">
+    <div className="d-flex flex-column text-center my-4 mx-2">
       <Huge>{node.title}</Huge>
-      {node.description ? (
-        <Large className="mt-4">{node.description}</Large>
-      ) : null}
       {node.text && node.text.react ? (
         <Large className="mt-4">
           {deserialize(node.text.react, {
@@ -126,14 +134,9 @@ const Document = ({ node }) => {
 const Card = ({ node, images }) => {
   return (
     <div className="d-flex flex-column flex-even my-4 px-4">
-      <Large className="text-center text-md-left font-weight-bold">
-        {node.title}
-      </Large>
-      {node.description ? (
-        <div className="mt-4 text-center text-md-left">{node.description}</div>
-      ) : null}
+      <Large className="font-weight-bold">{node.title}</Large>
       {node.text && node.text.react ? (
-        <div className="mt-4 text-center text-md-left">
+        <div className="mt-4">
           {deserialize(node.text.react, {
             components: {
               Link: () => null,
@@ -146,7 +149,7 @@ const Card = ({ node, images }) => {
   );
 };
 
-const MaybeFooter = styled.div`
+const CardContainer = styled.div`
   &:last-child {
     color: ${styles.gray200};
     background: ${styles.gray800};
@@ -157,7 +160,7 @@ const MaybeFooter = styled.div`
 
 const Folder = ({ node, images }) => {
   return (
-    <MaybeFooter className="d-flex flex-column flex-md-row">
+    <CardContainer className="d-flex flex-column flex-md-row">
       {(node.nodes || []).map(node => {
         switch (node._type) {
           case 'Document':
@@ -166,7 +169,7 @@ const Folder = ({ node, images }) => {
             return null;
         }
       })}
-    </MaybeFooter>
+    </CardContainer>
   );
 };
 
@@ -202,7 +205,6 @@ export const query = graphql`
   fragment Document on PloneDocument {
     _type
     title
-    description
     text {
       react
     }
@@ -214,7 +216,16 @@ export const query = graphql`
     description
     image {
       childImageSharp {
-        fixed(width: 1200) {
+        hero: fixed(height: 1600) {
+          ...GatsbyImageSharpFixed
+        }
+        listing: fixed(width: 16) {
+          ...GatsbyImageSharpFixed
+        }
+        icon: fixed(width: 32) {
+          ...GatsbyImageSharpFixed
+        }
+        tile: fixed(width: 64) {
           ...GatsbyImageSharpFixed
         }
         thumb: fixed(width: 128) {
@@ -226,8 +237,20 @@ export const query = graphql`
         preview: fixed(width: 400) {
           ...GatsbyImageSharpFixed
         }
+        large: fixed(width: 768) {
+          ...GatsbyImageSharpFixed
+        }
       }
       scales {
+        listing {
+          download
+        }
+        icon {
+          download
+        }
+        tile {
+          download
+        }
         thumb {
           download
         }
@@ -235,6 +258,9 @@ export const query = graphql`
           download
         }
         preview {
+          download
+        }
+        large {
           download
         }
       }
@@ -253,7 +279,6 @@ export const query = graphql`
         ... on PloneFolder {
           _type
           title
-          description
           nodes {
             ... on PloneDocument {
               ...Document

@@ -46,7 +46,7 @@ export const Header = ({ className = '', children }) => {
           className: [
             'd-flex flex-row align-items-center',
             'font-weight-normal',
-            'my-0 mr-md-auto',
+            'my-0 mr-auto',
           ].join(' '),
         },
         [

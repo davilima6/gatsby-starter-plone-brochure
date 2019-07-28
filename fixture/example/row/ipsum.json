@@ -1,0 +1,58 @@
+{
+  "@components": {
+    "actions": {
+      "@id": "http://localhost:8080/Plone/example/row/ipsum/@actions"
+    },
+    "breadcrumbs": {
+      "@id": "http://localhost:8080/Plone/example/row/ipsum/@breadcrumbs"
+    },
+    "navigation": {
+      "@id": "http://localhost:8080/Plone/example/row/ipsum/@navigation"
+    },
+    "workflow": {
+      "@id": "http://localhost:8080/Plone/example/row/ipsum/@workflow"
+    }
+  },
+  "@id": "http://localhost:8080/Plone/example/row/ipsum",
+  "@type": "Document",
+  "UID": "9161d5dbc0264ccca60ff2f1ed4eb234",
+  "allow_discussion": false,
+  "changeNote": "",
+  "contributors": [],
+  "created": "2019-07-27T20:50:18+00:00",
+  "creators": [
+    "admin"
+  ],
+  "description": "",
+  "effective": "2019-07-25T08:23:00",
+  "exclude_from_nav": false,
+  "expires": null,
+  "id": "ipsum",
+  "is_folderish": false,
+  "language": {
+    "title": "English",
+    "token": "en"
+  },
+  "layout": "document_view",
+  "modified": "2019-07-28T12:59:01+00:00",
+  "parent": {
+    "@id": "http://localhost:8080/Plone/example/row",
+    "@type": "Folder",
+    "description": "Rendered with flexbos",
+    "review_state": "published",
+    "title": "Row"
+  },
+  "relatedItems": [],
+  "review_state": "published",
+  "rights": null,
+  "subjects": [],
+  "table_of_contents": false,
+  "text": {
+    "content-type": "text/html",
+    "data": "<p><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\n<p><strong><img alt=\"Lorem ipsum\" class=\"image-right\" src=\"http://localhost:8080/Plone/example/climate-change-cold-glacier-2229887.jpg/@@images/0224409a-d20c-4dac-9ee8-8130e34aa1f8.jpeg\" title=\"Lorem ipsum\"/></strong>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+    "encoding": "utf-8"
+  },
+  "title": "Ipsum",
+  "version": "current",
+  "versioning_enabled": true
+}

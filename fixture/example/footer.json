@@ -1,0 +1,75 @@
+{
+  "@components": {
+    "actions": {
+      "@id": "http://localhost:8080/Plone/example/footer/@actions"
+    },
+    "breadcrumbs": {
+      "@id": "http://localhost:8080/Plone/example/footer/@breadcrumbs"
+    },
+    "navigation": {
+      "@id": "http://localhost:8080/Plone/example/footer/@navigation"
+    },
+    "workflow": {
+      "@id": "http://localhost:8080/Plone/example/footer/@workflow"
+    }
+  },
+  "@id": "http://localhost:8080/Plone/example/footer",
+  "@type": "Folder",
+  "UID": "6178d5cf61624dd5a398a940f8df0204",
+  "allow_discussion": false,
+  "contributors": [],
+  "created": "2019-07-27T20:50:24+00:00",
+  "creators": [
+    "admin"
+  ],
+  "description": "",
+  "effective": "2019-07-25T08:22:00",
+  "exclude_from_nav": false,
+  "expires": null,
+  "id": "footer",
+  "is_folderish": true,
+  "items": [
+    {
+      "@id": "http://localhost:8080/Plone/example/footer/cute",
+      "@type": "Document",
+      "description": "",
+      "review_state": "published",
+      "title": "Lorem"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/example/footer/ipsum",
+      "@type": "Document",
+      "description": "",
+      "review_state": "published",
+      "title": "Ipsum"
+    },
+    {
+      "@id": "http://localhost:8080/Plone/example/footer/dolor",
+      "@type": "Document",
+      "description": "",
+      "review_state": "published",
+      "title": "Dolor"
+    }
+  ],
+  "items_total": 3,
+  "language": {
+    "title": "English",
+    "token": "en"
+  },
+  "layout": "listing_view",
+  "modified": "2019-07-28T12:59:02+00:00",
+  "nextPreviousEnabled": false,
+  "parent": {
+    "@id": "http://localhost:8080/Plone/example",
+    "@type": "Folder",
+    "description": "",
+    "review_state": "published",
+    "title": "Example"
+  },
+  "relatedItems": [],
+  "review_state": "published",
+  "rights": null,
+  "subjects": [],
+  "title": "Footer",
+  "version": "current"
+}

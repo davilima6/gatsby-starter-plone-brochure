@@ -1,0 +1,58 @@
+{
+  "@components": {
+    "actions": {
+      "@id": "http://localhost:8080/Plone/example/hero/@actions"
+    },
+    "breadcrumbs": {
+      "@id": "http://localhost:8080/Plone/example/hero/@breadcrumbs"
+    },
+    "navigation": {
+      "@id": "http://localhost:8080/Plone/example/hero/@navigation"
+    },
+    "workflow": {
+      "@id": "http://localhost:8080/Plone/example/hero/@workflow"
+    }
+  },
+  "@id": "http://localhost:8080/Plone/example/hero",
+  "@type": "Document",
+  "UID": "98747ea773c94b34a6e73703f6f33ee3",
+  "allow_discussion": false,
+  "changeNote": "",
+  "contributors": [],
+  "created": "2019-07-27T20:50:16+00:00",
+  "creators": [
+    "admin"
+  ],
+  "description": "",
+  "effective": "2019-07-25T16:26:00",
+  "exclude_from_nav": false,
+  "expires": null,
+  "id": "hero",
+  "is_folderish": false,
+  "language": {
+    "title": "English",
+    "token": "en"
+  },
+  "layout": "document_view",
+  "modified": "2019-07-28T12:59:01+00:00",
+  "parent": {
+    "@id": "http://localhost:8080/Plone/example",
+    "@type": "Folder",
+    "description": "",
+    "review_state": "published",
+    "title": "Example"
+  },
+  "relatedItems": [],
+  "review_state": "published",
+  "rights": null,
+  "subjects": [],
+  "table_of_contents": false,
+  "text": {
+    "content-type": "text/html",
+    "data": "<p><em><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipiscing elit, sed do eiusmod <a href=\"https://plone.com/\">tempor incididunt</a> incididunt ut labore et <strong>dolore magna aliqua.</strong></em></p>",
+    "encoding": "utf-8"
+  },
+  "title": "Lorem ipsum",
+  "version": "current",
+  "versioning_enabled": true
+}

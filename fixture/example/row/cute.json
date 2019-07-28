@@ -1,0 +1,58 @@
+{
+  "@components": {
+    "actions": {
+      "@id": "http://localhost:8080/Plone/example/row/cute/@actions"
+    },
+    "breadcrumbs": {
+      "@id": "http://localhost:8080/Plone/example/row/cute/@breadcrumbs"
+    },
+    "navigation": {
+      "@id": "http://localhost:8080/Plone/example/row/cute/@navigation"
+    },
+    "workflow": {
+      "@id": "http://localhost:8080/Plone/example/row/cute/@workflow"
+    }
+  },
+  "@id": "http://localhost:8080/Plone/example/row/cute",
+  "@type": "Document",
+  "UID": "58e598a6a6b649c896dc79b778cfc3ff",
+  "allow_discussion": false,
+  "changeNote": "",
+  "contributors": [],
+  "created": "2019-07-27T20:50:17+00:00",
+  "creators": [
+    "admin"
+  ],
+  "description": "",
+  "effective": "2019-07-25T08:23:00",
+  "exclude_from_nav": false,
+  "expires": null,
+  "id": "cute",
+  "is_folderish": false,
+  "language": {
+    "title": "English",
+    "token": "en"
+  },
+  "layout": "document_view",
+  "modified": "2019-07-28T13:01:40+00:00",
+  "parent": {
+    "@id": "http://localhost:8080/Plone/example/row",
+    "@type": "Folder",
+    "description": "Rendered with flexbos",
+    "review_state": "published",
+    "title": "Row"
+  },
+  "relatedItems": [],
+  "review_state": "published",
+  "rights": null,
+  "subjects": [],
+  "table_of_contents": false,
+  "text": {
+    "content-type": "text/html",
+    "data": "<p><img alt=\"The Ultimate Open Source CMS\" class=\"image-left\" src=\"http://localhost:8080/Plone/example/adventure-beautiful-blue-sky-666737.jpg/@@images/a3509fd6-aeed-4eb0-b5bd-a9ecdeedee69.jpeg\" title=\"Plone\"/><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipiscing elit, sed do eiusmod <a href=\"https://plone.com/\">tempor incididunt</a> ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>\n<p/>",
+    "encoding": "utf-8"
+  },
+  "title": "Lorem",
+  "version": "current",
+  "versioning_enabled": true
+}

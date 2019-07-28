@@ -2,9 +2,7 @@ import Typography from 'typography';
 import Parnassus from 'typography-theme-parnassus';
 
 Parnassus.overrideThemeStyles = () => {
-  return {
-    a: {},
-  };
+  return {};
 };
 
 const typography = new Typography(Parnassus);

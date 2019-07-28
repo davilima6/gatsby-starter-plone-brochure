@@ -15,10 +15,10 @@
   },
   "@id": "http://localhost:8080/Plone/example",
   "@type": "Folder",
-  "UID": "e5da4881898b441794351e5d20d43165",
+  "UID": "16848163a2384d3cbb11b7578d71dcfc",
   "allow_discussion": false,
   "contributors": [],
-  "created": "2019-07-27T20:47:36+00:00",
+  "created": "2019-07-27T20:50:14+00:00",
   "creators": [
     "admin"
   ],
@@ -37,32 +37,32 @@
       "title": "Plone"
     },
     {
-      "@id": "http://localhost:8080/Plone/example/lorem-ipsum",
+      "@id": "http://localhost:8080/Plone/example/hero",
       "@type": "Document",
-      "description": "Lorem ipsum dolor sit amet",
+      "description": "",
       "review_state": "published",
       "title": "Lorem ipsum"
     },
     {
-      "@id": "http://localhost:8080/Plone/example/folder-a",
+      "@id": "http://localhost:8080/Plone/example/row-1",
       "@type": "Folder",
       "description": "Rendered with flexbos",
       "review_state": "published",
-      "title": "Folder of cards"
+      "title": "Row"
     },
     {
       "@id": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg",
       "@type": "Image",
-      "description": "",
+      "description": "dolor sit amet",
       "review_state": null,
-      "title": "Lorem ipsum dolor"
+      "title": "Lorem ipsum"
     },
     {
-      "@id": "http://localhost:8080/Plone/example/folder-b",
+      "@id": "http://localhost:8080/Plone/example/row",
       "@type": "Folder",
       "description": "Rendered with flexbos",
       "review_state": "published",
-      "title": "Folder of cards"
+      "title": "Row"
     },
     {
       "@id": "http://localhost:8080/Plone/example/climate-change-cold-glacier-2229887.jpg",
@@ -72,11 +72,11 @@
       "title": "Lorem ipsum"
     },
     {
-      "@id": "http://localhost:8080/Plone/example/folder-c",
+      "@id": "http://localhost:8080/Plone/example/footer",
       "@type": "Folder",
-      "description": "Rendered with flexbos",
+      "description": "",
       "review_state": "published",
-      "title": "Folder of cards"
+      "title": "Footer"
     }
   ],
   "items_total": 7,
@@ -85,7 +85,7 @@
     "token": "en"
   },
   "layout": "listing_view",
-  "modified": "2019-07-27T20:48:05+00:00",
+  "modified": "2019-07-28T12:59:31+00:00",
   "nextPreviousEnabled": false,
   "parent": {
     "@id": "http://localhost:8080/Plone",

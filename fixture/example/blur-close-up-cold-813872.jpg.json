@@ -15,61 +15,61 @@
   },
   "@id": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg",
   "@type": "Image",
-  "UID": "e65a177c64164c24a9dcbd7d20ab6f80",
+  "UID": "859ceaa5cc77417eb510ef4403cc8797",
   "allow_discussion": false,
   "contributors": [],
-  "created": "2019-07-27T20:47:41+00:00",
+  "created": "2019-07-27T20:50:19+00:00",
   "creators": [
     "admin"
   ],
-  "description": "",
+  "description": "dolor sit amet",
   "effective": null,
   "exclude_from_nav": false,
   "expires": null,
   "id": "blur-close-up-cold-813872.jpg",
   "image": {
     "content-type": "image/jpeg",
-    "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/693b5213-4182-478e-a256-56f568caa079.jpeg",
+    "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/a26797b3-6993-4e26-ae51-9e7f7dcf85f2.jpeg",
     "filename": "blur-close-up-cold-813872.jpg",
     "height": 2112,
     "scales": {
       "icon": {
-        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/9f98142d-5d45-4f03-8a51-c44ea7b80d97.jpeg",
+        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/118de5c2-4974-42de-8751-e1dcd3b039c1.jpeg",
         "height": 19,
         "width": 32
       },
       "large": {
-        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/1c04ec40-bcfb-4ce2-84f7-d38ae846ca58.jpeg",
+        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/2cc3898e-8dd7-4e1d-b329-24754e9bd8d6.jpeg",
         "height": 458,
         "width": 768
       },
       "listing": {
-        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/2b71294d-1e2a-4326-b608-49d9a099423e.jpeg",
+        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/43664709-cc0f-46d7-94d2-fcf3a9c41dcb.jpeg",
         "height": 9,
         "width": 16
       },
       "mini": {
-        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/9afe4878-e4ad-4d33-8a82-bbafe9446de6.jpeg",
+        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/b603e18d-68c9-49a8-80bc-eb93f3bf71d7.jpeg",
         "height": 119,
         "width": 200
       },
       "preview": {
-        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/b8e2b743-783b-4482-b661-0133d288c9b0.jpeg",
+        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/a14f9033-aea8-4961-b46d-5321ce92ebcb.jpeg",
         "height": 238,
         "width": 400
       },
       "thumb": {
-        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/c0b9ff79-1d00-482f-a639-dd1d7ae20aea.jpeg",
+        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/fa406411-5e13-472d-a0a2-6f0623752c36.jpeg",
         "height": 76,
         "width": 128
       },
       "tile": {
-        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/e998affe-d115-4620-b39a-ea340aac1be5.jpeg",
+        "download": "http://localhost:8080/Plone/example/blur-close-up-cold-813872.jpg/@@images/8dd7ed08-b158-4af7-8518-392d9a948326.jpeg",
         "height": 38,
         "width": 64
       }
     },
-    "size": 1176331,
+    "size": 1175424,
     "width": 3538
   },
   "is_folderish": false,
@@ -78,7 +78,7 @@
     "token": "en"
   },
   "layout": "image_view",
-  "modified": "2019-07-27T20:47:41+00:00",
+  "modified": "2019-07-28T13:26:27+00:00",
   "parent": {
     "@id": "http://localhost:8080/Plone/example",
     "@type": "Folder",
@@ -90,6 +90,6 @@
   "review_state": null,
   "rights": null,
   "subjects": [],
-  "title": "Lorem ipsum dolor",
+  "title": "Lorem ipsum",
   "version": "current"
 }

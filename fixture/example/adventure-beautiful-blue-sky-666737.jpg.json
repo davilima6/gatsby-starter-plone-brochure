@@ -15,10 +15,10 @@
   },
   "@id": "http://localhost:8080/Plone/example/adventure-beautiful-blue-sky-666737.jpg",
   "@type": "Image",
-  "UID": "025b9aeccb4e4018a16dda6c01ce4e97",
+  "UID": "d4da5ff86e0b41b6934bbf93eb53a23b",
   "allow_discussion": false,
   "contributors": [],
-  "created": "2019-07-27T20:47:36+00:00",
+  "created": "2019-07-27T20:50:15+00:00",
   "creators": [
     "admin"
   ],
@@ -29,47 +29,47 @@
   "id": "adventure-beautiful-blue-sky-666737.jpg",
   "image": {
     "content-type": "image/jpeg",
-    "download": "http://localhost:8080/Plone/example/adventure-beautiful-blue-sky-666737.jpg/@@images/e38aef16-ce13-44a7-9e28-3c814e4ddf4b.jpeg",
+    "download": "http://localhost:8080/Plone/example/adventure-beautiful-blue-sky-666737.jpg/@@images/b42fe0f0-be5c-4a06-a5e4-04e01a504ce5.jpeg",
     "filename": "adventure-beautiful-blue-sky-666737.jpg",
     "height": 2914,
     "scales": {
       "icon": {
-        "download": "http://localhost:8080/Plone/example/adventure-beautiful-blue-sky-666737.jpg/@@images/db6c7d0d-cae6-4e3e-8726-528c46be96a4.jpeg",
+        "download": "http://localhost:8080/Plone/example/adventure-beautiful-blue-sky-666737.jpg/@@images/35902010-5989-44ad-8caf-0ec7fa41478c.jpeg",
         "height": 23,
         "width": 32
       },
       "large": {
-        "download": "http://localhost:8080/Plone/example/adventure-beautiful-blue-sky-666737.jpg/@@images/a6ad2dcc-aeb3-4a42-92ed-fee65af57b34.jpeg",
+        "download": "http://localhost:8080/Plone/example/adventure-beautiful-blue-sky-666737.jpg/@@images/b857d2c8-cd45-4169-bb17-0cebba4d6ebe.jpeg",
         "height": 575,
         "width": 768
       },
       "listing": {
-        "download": "http://localhost:8080/Plone/example/adventure-beautiful-blue-sky-666737.jpg/@@images/751e9640-d5a8-46d3-9b41-f4dc9062398b.jpeg",
+        "download": "http://localhost:8080/Plone/example/adventure-beautiful-blue-sky-666737.jpg/@@images/1d4ba837-6034-444b-ae10-c194ebac326b.jpeg",
         "height": 11,
         "width": 16
       },
       "mini": {
-        "download": "http://localhost:8080/Plone/example/adventure-beautiful-blue-sky-666737.jpg/@@images/e2947107-5c43-42bc-898f-af83ca17c457.jpeg",
+        "download": "http://localhost:8080/Plone/example/adventure-beautiful-blue-sky-666737.jpg/@@images/36180123-484c-4dc9-a2e7-a525d4dc97aa.jpeg",
         "height": 149,
         "width": 200
       },
       "preview": {
-        "download": "http://localhost:8080/Plone/example/adventure-beautiful-blue-sky-666737.jpg/@@images/ccd2458a-9ff5-4087-bc81-eaf250dddecd.jpeg",
+        "download": "http://localhost:8080/Plone/example/adventure-beautiful-blue-sky-666737.jpg/@@images/2640ff5a-4cd1-4cce-af74-b0f4908308e1.jpeg",
         "height": 299,
         "width": 400
       },
       "thumb": {
-        "download": "http://localhost:8080/Plone/example/adventure-beautiful-blue-sky-666737.jpg/@@images/5aba8ac6-baad-40de-8738-8f2d34dc0cea.jpeg",
+        "download": "http://localhost:8080/Plone/example/adventure-beautiful-blue-sky-666737.jpg/@@images/a3509fd6-aeed-4eb0-b5bd-a9ecdeedee69.jpeg",
         "height": 95,
         "width": 128
       },
       "tile": {
-        "download": "http://localhost:8080/Plone/example/adventure-beautiful-blue-sky-666737.jpg/@@images/0c1ec9c6-9b97-479d-8b8e-a92f0ffb269f.jpeg",
+        "download": "http://localhost:8080/Plone/example/adventure-beautiful-blue-sky-666737.jpg/@@images/cf86e03d-212d-48a9-9e9d-a3c8b541e9b6.jpeg",
         "height": 47,
         "width": 64
       }
     },
-    "size": 1811122,
+    "size": 1811088,
     "width": 3886
   },
   "is_folderish": false,
@@ -78,7 +78,7 @@
     "token": "en"
   },
   "layout": "image_view",
-  "modified": "2019-07-27T20:47:37+00:00",
+  "modified": "2019-07-28T11:11:10+00:00",
   "parent": {
     "@id": "http://localhost:8080/Plone/example",
     "@type": "Folder",
