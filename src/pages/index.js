@@ -71,6 +71,36 @@ const Image = ({ node }) => {
   );
 };
 
+// Process images
+// If image node, use gatsby-image to display content from plugin-sharp
+// If external linked image, display the image normally
+const ResolveImage = images => data => {
+  let byPath = images.reduce(
+    (map, image) => map.set(image._path, image),
+    new Map()
+  );
+  if (byPath.get(data.src)) {
+    let byResolution = Object.keys(byPath.get(data.src).image.scales).reduce(
+      (map, scale) =>
+        map.set(byPath.get(data.src).image.scales[scale].download, scale),
+      new Map()
+    );
+    return (
+      <Img
+        Tag="span"
+        className={data.className}
+        fixed={
+          byPath.get(data.src).image.childImageSharp[
+            byResolution.get(data['data-download'])
+          ]
+        }
+      />
+    );
+  } else {
+    return <img src={data.src} alt={data.alt} title={data.title} />;
+  }
+};
+
 // For inline-images, see: https://collective.github.io/gatsby-source-plone/tutorial/6_richtext_component/
 const Document = ({ node }) => {
   return (
@@ -93,7 +123,7 @@ const Document = ({ node }) => {
   );
 };
 
-const Card = ({ node }) => {
+const Card = ({ node, images }) => {
   return (
     <div className="d-flex flex-column flex-even my-4 px-4">
       <Large className="text-center text-md-left font-weight-bold">
@@ -107,7 +137,7 @@ const Card = ({ node }) => {
           {deserialize(node.text.react, {
             components: {
               Link: () => null,
-              Img: () => null,
+              Img: ResolveImage(images),
             },
           })}
         </div>
@@ -125,13 +155,13 @@ const MaybeFooter = styled.div`
   }
 `;
 
-const Folder = ({ node }) => {
+const Folder = ({ node, images }) => {
   return (
     <MaybeFooter className="d-flex flex-column flex-md-row">
       {(node.nodes || []).map(node => {
         switch (node._type) {
           case 'Document':
-            return <Card node={node} />;
+            return <Card node={node} images={images} />;
           default:
             return null;
         }
@@ -140,14 +170,14 @@ const Folder = ({ node }) => {
   );
 };
 
-const Row = ({ node }) => {
+const Row = ({ node, images }) => {
   switch (node._type) {
     case 'Image':
       return <Image node={node} />;
     case 'Document':
       return <Document node={node} />;
     case 'Folder':
-      return <Folder node={node} />;
+      return <Folder node={node} images={images} />;
     default:
       return null;
   }
@@ -156,7 +186,10 @@ const Row = ({ node }) => {
 const IndexPage = ({ data }) => (
   <Layout>
     {data.ploneSite.nodes.map(node => (
-      <Row node={node} />
+      <Row
+        node={node}
+        images={data.allPloneImage.edges.map(({ node }) => node)}
+      />
     ))}
   </Layout>
 );
@@ -176,6 +209,7 @@ export const query = graphql`
   }
   fragment Image on PloneImage {
     _type
+    _path
     title
     description
     image {
@@ -183,10 +217,37 @@ export const query = graphql`
         fixed(width: 1200) {
           ...GatsbyImageSharpFixed
         }
+        thumb: fixed(width: 128) {
+          ...GatsbyImageSharpFixed
+        }
+        mini: fixed(width: 200) {
+          ...GatsbyImageSharpFixed
+        }
+        preview: fixed(width: 400) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+      scales {
+        thumb {
+          download
+        }
+        mini {
+          download
+        }
+        preview {
+          download
+        }
       }
     }
   }
   query IndexPageQuery {
+    allPloneImage {
+      edges {
+        node {
+          ...Image
+        }
+      }
+    }
     ploneSite {
       nodes {
         ... on PloneFolder {
