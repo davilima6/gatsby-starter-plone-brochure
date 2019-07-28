@@ -16,6 +16,7 @@ export const Helmet = () => {
     ReactHelmet,
     {
       title: site.siteMetadata.title,
+      htmlAttributes: { lang: 'en' },
     },
     []
   );

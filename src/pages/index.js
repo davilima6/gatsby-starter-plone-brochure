@@ -44,10 +44,11 @@ const HUGE = styled.div`
   ${scale(2)};
 `;
 
-const Huge = styled.div`
+const Huge = styled.h1`
   font-family: ${headerFontFamily.join(', ')};
   ${scale(1.75)};
   font-weight: bold;
+  margin: 0;
 `;
 
 const Large = styled.div`
@@ -65,6 +66,7 @@ const Image = ({ node }) => {
         className={styles.fullwidth}
         imgStyle={{ height: '80vh' }}
         fixed={node.image.childImageSharp.hero}
+        alt=""
       />
       <FixedContainerBackdrop />
       <FixedContainerText>
@@ -90,6 +92,7 @@ const ResolveImage = images => data => {
     );
     return (
       <Img
+        alt={data.alt || ''}
         className={data.className}
         style={
           data.className !== 'image-inline'
@@ -108,7 +111,9 @@ const ResolveImage = images => data => {
       />
     );
   } else {
-    return <img src={data.src} alt={data.alt} title={data.title} />;
+    return (
+      <img src={data.src} alt={data.alt || ''} title={data.title || null} />
+    );
   }
 };
 
